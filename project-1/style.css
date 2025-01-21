@@ -1,0 +1,68 @@
+/* General Styles */
+.avatar {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+  
+  /* Message Header */
+  .message-header {
+    font-size: 14px;
+    color: #6c757d; /* Grayish color for timestamp and sender name */
+    margin-bottom: 5px;
+    font-family: Arial, sans-serif;
+  }
+  
+  /* Message Bubble Common Styles */
+  .message {
+    max-width: 427px; /* As per the Figma design */
+    width: fit-content;
+    padding: 10px 20px;
+    border-radius: 8px;
+    font-size: 14px;
+    line-height: 1.5;
+    font-family: 'Arial', sans-serif;
+    position: relative;
+    word-break: break-word;
+  }
+  
+  /* Received Message */
+  .message.received {
+    background: linear-gradient(90deg, #DE4BC6 0%, #FF7AE9 100%);
+    color: white;
+  }
+  
+  /* Sent Message */
+  .message.sent {
+    background: #f8f9fa; /* Light gray for sent messages */
+    color: #212529; /* Dark text for contrast */
+    border: 1px solid #dee2e6;
+    text-align: right;
+  }
+  
+  /* Message Images */
+  .message img {
+    border-radius: 8px;
+    object-fit: cover;
+    width: 80px;
+    height: 80px;
+  }
+  
+  /* Images in Grid */
+  .message .d-flex img {
+    width: 70px; /* Adjust for image thumbnails */
+    height: 70px;
+    object-fit: cover;
+    border-radius: 8px;
+  }
+  
+  /* Spacing Adjustments */
+  .d-flex.align-items-start {
+    gap: 10px; /* Space between avatar and message */
+  }
+  
+  .d-flex.align-items-end {
+    gap: 10px;
+  }
+  
