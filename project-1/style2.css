@@ -1,0 +1,17 @@
+.nav-link {
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Center the icon */
+    text-decoration: none;
+    color: #000; /* Text color */
+    width: 54px; /* Fixed width */
+    height: 54px; /* Fixed height */
+    border-radius: 10px; /* Match Figma's rounded corners */
+    transition: background-color 0.3s ease; /* Smooth transition */
+    background-color: transparent; /* Initial background color */
+    margin-bottom: 10px; /* Gap between icons */
+}
+
+.nav-link:hover {
+    background-color: rgb(255, 255, 255); /* White background on hover */
+}
