@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Company Profile & Events</title>
+  <!-- Bootstrap 5 CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+
+  <style>
+    .profile-section {
+      border-right: 1px solid #eee;
+      min-height: 100vh;
+      background: #fff;
+      padding: 30px;
+    }
+    .profile-section img {
+      border-radius: 50%;
+      width: 120px;
+      height: 120px;
+      object-fit: cover;
+      margin-bottom: 15px;
+    }
+    .event-card {
+      border-radius: 15px;
+      border: 1px solid #eee;
+      transition: 0.3s;
+      background: #fff;
+    }
+    .event-card:hover {
+      box-shadow: 0px 4px 20px rgba(0,0,0,0.1);
+    }
+    .event-img {
+      border-radius: 12px;
+      object-fit: cover;
+      height: 140px;
+      width: 100%;
+    }
+    .tag {
+      font-size: 0.75rem;
+      padding: 3px 8px;
+      border-radius: 20px;
+      font-weight: 600;
+      display: inline-block;
+      margin-bottom: 6px;
+    }
+    .tag-purple { background: #f3e8ff; color: #9333ea; }
+    .tag-pink { background: #ffe4f1; color: #db2777; }
+    .tag-blue { background: #e0f2fe; color: #2563eb; }
+  </style>
+</head>
+<body class="bg-light">
+
+<div class="container-fluid">
+  <div class="row">
+
+    <!-- Left Side: Company Profile -->
+    <div class="col-md-4 profile-section">
+      <div class="text-center">
+        <img src="https://tse3.mm.bing.net/th/id/OIP.izx7SN5sCdbv72q4drgbuQHaEK?pid=Api&P=0&h=180" alt="Company Logo">
+        <h4 class="fw-bold">FORD CAR RACING COMPANY</h4>
+        <p class="text-muted">We organize high-energy racing events and automobile expos worldwide.</p>
+      </div>
+
+      <hr>
+
+      <p class="tag tag-purple"><strong>Status:</strong> Active</p>
+      <p><strong>Phone:</strong> 006 3435 22</p>
+      <p><strong>Email:</strong> jacob@testmail.com</p>
+      <p><strong>Facebook:</strong> <a href="#">David Grey</a></p>
+      <p><strong>Twitter:</strong> <a href="#">@davidgrey</a></p>
+
+      <button class="btn btn-primary w-100 mt-3">Preview</button>
+    </div>
+
+    <!-- Right Side: Tabs + Events -->
+    <div class="col-md-8 p-4">
+      <!-- Tabs -->
+      <ul class="nav nav-tabs mb-3" id="myTab" role="tablist">
+        <li class="nav-item">
+          <button class="nav-link active" id="events-tab" data-bs-toggle="tab" data-bs-target="#events" type="button">Events</button>
+        </li>
+        <li class="nav-item">
+          <button class="nav-link" id="feed-tab" data-bs-toggle="tab" data-bs-target="#feed" type="button">Feed</button>
+        </li>
+        <li class="nav-item">
+          <button class="nav-link" id="agenda-tab" data-bs-toggle="tab" data-bs-target="#agenda" type="button">Agenda</button>
+        </li>
+        <li class="nav-item">
+          <button class="nav-link" id="resume-tab" data-bs-toggle="tab" data-bs-target="#resume" type="button">Resume</button>
+        </li>
+      </ul>
+
+      <!-- Tab Content -->
+      <div class="tab-content">
+
+        <!-- Events List -->
+        <div class="tab-pane fade show active" id="events">
+          <!-- Event Card -->
+          <div class="event-card p-3 mb-4 d-flex align-items-center">
+            <div class="me-3">
+              <img src="https://www.focuseventphotography.com/wp-content/uploads/2019/12/corporate-events-photographer-mirage-las-vegas.jpg" alt="Event" class="event-img">
+            </div>
+            <div class="flex-grow-1">
+              <span class="tag tag-purple">Outdoor & Adventure</span>
+              <h5 class="mb-1">Adventure Gear Show</h5>
+              <p class="text-muted mb-2 small">Top outdoor brands showcase the latest gear. Discounts, demos, and expert consultations.</p>
+              <p class="mb-0 small"><i class="bi bi-geo-alt"></i> Rocky Ridge Hall, Denver, CO</p>
+              <p class="small text-muted">June 5, 2029 — 3:00 PM</p>
+            </div>
+          </div>
+
+          <!-- Another Event -->
+          <div class="event-card p-3 mb-4 d-flex align-items-center">
+            <div class="me-3">
+              <img src="https://www.oyorooms.com/blog/wp-content/uploads/2018/02/event.jpg" alt="Event" class="event-img">
+            </div>
+            <div class="flex-grow-1">
+              <span class="tag tag-pink">Food & Culinary</span>
+              <h5 class="mb-1">Culinary Delights Festival</h5>
+              <p class="text-muted mb-2 small">Sample delicious dishes, watch chef demos, and savor diverse cuisines.</p>
+              <p class="mb-0 small"><i class="bi bi-geo-alt"></i> The Plaza, San Francisco, CA</p>
+              <p class="small text-muted">May 25, 2029 — 11:00 AM</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Feed -->
+        <div class="tab-pane fade" id="feed">
+          <p>Feed content will come here...</p>
+        </div>
+
+        <!-- Agenda -->
+        <div class="tab-pane fade" id="agenda">
+          <p>Agenda content will come here...</p>
+        </div>
+
+        <!-- Resume -->
+        <div class="tab-pane fade" id="resume">
+          <p>Resume content will come here...</p>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

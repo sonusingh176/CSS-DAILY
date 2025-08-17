@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Pricing Plans</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    .pricing-card {
+      border: 1px solid #ddd;
+      border-radius: 15px;
+      transition: all 0.3s ease;
+    }
+    .pricing-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+    }
+    .pricing-header {
+      font-size: 2rem;
+      font-weight: bold;
+    }
+    .price {
+      font-size: 2.5rem;
+      font-weight: bold;
+    }
+    .btn-rounded {
+      border-radius: 10px;
+      padding: 8px 20px;
+    }
+  </style>
+</head>
+<body class="bg-white">
+
+<div class="container py-5 text-center">
+  <h4 class="mb-2">Start up your Business today</h4>
+  <p class="text-muted mb-5">
+    Choose a plan that suits you the best. If you are not fully satisfied, we offer 30-day money-back guarantee no questions asked!
+  </p>
+
+  <div class="row g-4 justify-content-center">
+
+    <!-- Free Plan -->
+    <div class="col-md-4">
+      <div class="card pricing-card h-100 p-4">
+        <h5 class="fw-bold">Free</h5>
+        <p class="text-muted">Basic Plan</p>
+        <h2 class="price">$00.00</h2>
+        <ul class="list-unstyled my-4 text-start">
+          <li>Email preview on air</li>
+          <li>Spam testing and blocking</li>
+          <li>10 GB Space</li>
+          <li>50 user accounts</li>
+          <li>Free support for one year</li>
+          <li>Free upgrade for one year</li>
+        </ul>
+        <button class="btn btn-outline-primary btn-rounded w-100">Download</button>
+        <small class="text-muted d-block mt-2">Free</small>
+      </div>
+    </div>
+
+    <!-- Professional Plan -->
+    <div class="col-md-4">
+      <div class="card pricing-card h-100 p-4 border-success">
+        <h5 class="fw-bold text-success">Professional</h5>
+        <p class="text-muted">For Business</p>
+        <h2 class="price">$50.90</h2>
+        <ul class="list-unstyled my-4 text-start">
+          <li>Email preview on air</li>
+          <li>Spam testing and blocking</li>
+          <li>50 GB Space</li>
+          <li>100 user accounts</li>
+          <li>Free support for two years</li>
+          <li>Free upgrade for two years</li>
+        </ul>
+        <button class="btn btn-success btn-rounded w-100">Start Trial</button>
+        <small class="text-success d-block mt-2">or purchase now</small>
+      </div>
+    </div>
+
+    <!-- Enterprise Plan -->
+    <div class="col-md-4">
+      <div class="card pricing-card h-100 p-4">
+        <h5 class="fw-bold">Enterprise</h5>
+        <p class="text-muted">Custom Business</p>
+        <h2 class="price">$80.90</h2>
+        <ul class="list-unstyled my-4 text-start">
+          <li>Email preview on air</li>
+          <li>Spam testing and blocking</li>
+          <li>100 GB Space</li>
+          <li>200 user accounts</li>
+          <li>Free support for two years</li>
+          <li>Free upgrade for two years</li>
+        </ul>
+        <button class="btn btn-outline-primary btn-rounded w-100">Start Trial</button>
+        <small class="text-muted d-block mt-2">or purchase now</small>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
